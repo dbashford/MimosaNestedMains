@@ -28,7 +28,7 @@ var config = {
       "onePager": false
     },
     "path": [
-      "server.js"
+      "server.coffee"
     ],
     "port": 3000,
     "base": "",
