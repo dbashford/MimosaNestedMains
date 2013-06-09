@@ -1,0 +1,10 @@
+extends layout
+
+block scripts
+  if optimize
+    script(src='/javascripts/main-built.js')
+  else
+    script(src='/javascripts/vendor/require.js', data-main='/javascripts/main.js')
+
+block heading
+  h1 This is coming from /javascripts/main-built.js

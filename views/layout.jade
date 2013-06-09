@@ -1,0 +1,26 @@
+doctype 5
+html
+	head
+		title Mimosa
+		link(rel='stylesheet', href='/stylesheets/style.css' + cachebust)
+
+		if reload
+			script(src='/socket.io/socket.io.js')
+			script(src='/javascripts/reload-client.js')
+
+		block scripts
+
+	body
+
+		block heading
+
+		h3 Apps
+		ul
+			li
+				a(href='/') Root
+			li
+				a(href='/app1') App1
+			li
+				a(href='/app2') App2
+
+		#info
